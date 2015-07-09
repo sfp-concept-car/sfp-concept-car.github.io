@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+<title></title>
+<style type="text/css">
+ div.c1 {padding-top:8%;}
+</style>
+<div class="row col-xs-12 text-center">
+<h3 class="introline">{{introline.content|uppercase}}</h3></div>
+<div class="row">
+<div class="col-sm-2 hidden-xs text-center block-center">
+<div class="col-sm-12 text-center block-center" ng-repeat="slide in maincarousel" ng-show="slide.index===maincarouselpill1"><a ng-click="$parent.maincarouselindex = slide.index;pillcalculate();"><img class="img-pill img-circle img-responsive" src="{{slide.image}}"></a></div>
+<div class="col-sm-12 text-center block-center" ng-repeat="slide in maincarousel" ng-show="slide.index===maincarouselindex"><img class="img-pill img-circle img-responsive selected" src="{{slide.image}}"></div>
+<div class="col-sm-12 text-center block-center" ng-repeat="slide in maincarousel" ng-show="slide.index===maincarouselpill3"><a ng-click="$parent.maincarouselindex = slide.index;pillcalculate();"><img class="img-pill img-circle img-responsive" src="{{slide.image}}"></a></div></div>
+<div class="col-sm-10 mainslider-content row c1" ng-repeat="slide in maincarousel" ng-show="slide.index===maincarouselindex">
+<div class="col-sm-8 text-center">
+<h4 class="slider-content slide-title">{{slide.title}}</h4>
+<p>{{slide.text}}<br><a href="{{slide.href}}"><button class="btn btn-default">En savoir plus</button></a></div>
+<div class="col-sm-4 text-center block-center"><img class="img-rounded slider-image img-responsive" src="{{slide.image}}"></div></div></div>
