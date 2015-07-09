@@ -1,0 +1,109 @@
+body
+{
+	background:#333;
+	color:#fff;
+	text-shadow:2px 2px 2px #000;
+}
+
+a,.nav,.pagination,.carousel,.panel-title a
+{
+	cursor:pointer;
+}
+
+.img-pill
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.tiretrack
+{
+	height:20px;
+	margin-top:10px;
+	margin-bottom:10px;
+	background-image:url(http://hans-scheuren.bitnamiapp.com/sfp3/image/tiretrack.png);
+}
+
+.main-title
+{
+	color:#FFF;
+	font-family:'Monotype Corsiva';
+	text-shadow:1px 1px 1px #000, 0 0 30px #fff;
+}
+
+.top
+{
+	font-size:60px;
+}
+
+.lettrine,.introline,.slide-title
+{
+	color:#F1602D;
+}
+
+.introline
+{
+	font-size:16px;
+	font-weight:700;
+	margin-bottom:10px;
+}
+
+.headline
+{
+	font-size:30px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.subheadline,.tags .subpill
+{
+	font-size:10px;
+}
+
+.slide-title
+{
+	font-family:'Monotype Corsiva';
+	font-size:24px;
+}
+
+.btn-default
+{
+	padding-top:10px;
+	color:#fff;
+	background-color:#F1602D;
+	border-color:#a8431f;
+}
+
+.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default
+{
+	color:#fff;
+	background-color:#c04c24;
+	border-color:#a8431f;
+}
+
+.navbar
+{
+	margin-bottom:0;
+}
+
+.navbar-default
+{
+	background-color:#F1602D;
+	border-color:#a8431f;
+}
+
+.navbar-default .navbar-nav>li>a
+{
+	color:#fff;
+}
+
+.selected,.slider-image
+{
+	box-shadow:0 0 30px #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus
+{
+	background-color:#c04c24;
+	color:#fff;
+}
