@@ -1,1 +1,66 @@
-<div class="row"> <div class="col-sm-3 col-lg-2 text-center block-center"> <h1 class="main-title top"><span class="lettrine">S</span><sub>f</sub><span class="lettrine">P</span></h1> <h2 class="main-title bottom"><span class="lettrine">C</span>oncept <span class="lettrine">C</span>ar</h2> </div> <div class="col-sm-9 col-lg-10 text-center block-center"> <h3 class="headline ng-binding">Spécialistes de l'esthétique de votre véhicule!</h3> <p class="subheadline ng-binding">CAMIONS-AUTOS-MOTOS-ANCÈTRES-VÉHICULES DE CHANTIER OU AGRICOLE-BATEAU-TOUT AUTRE VÉHICULE</p> <div class="row"> <div class="col-xs-12"> <nav class="navbar navbar-default" role="navigation"> <div class="navbar-header"> <div class="row"> <div class="col-xs-6"> <span class="visible-xs">Toggle navigation</span> </div> <div class="col-xs-6"> <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> </div> </div> </div> <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true"> <ul class="nav navbar-nav" ng-controller="NavCtrl"> <li ng-class="{ active: isActive('/')}"><a ng-href="#">Home</a> </li> <li ng-class="{ active: isActive('/blog')}"><a ng-href="#/blog">Blog</a> </li> <li ng-class="{ active: isActive('/shop')}"><a ng-hide="true" ng-href="#/shop">E-commerce</a> </li> <li ng-class="{ active: isActive('/pages/nettoyage')}"><a ng-href="#/pages/nettoyage">Nettoyage</a> </li> <li ng-class="{ active: isActive('/pages/service-a-la-clientele')}"><a ng-href="#/pages/service-a-la-clientele">Service à la clientèle</a> </li> <li ng-class="{ active: isActive('/pages/logistique')}"><a ng-href="#/pages/logistique">Logistique</a> </li> <li ng-class="{ active: isActive('/pages/sinistres')}"><a ng-href="#/pages/sinistres">Sinistres</a> </li> <li class="dropdown parent" ng-class="{ active: isActive('/pages/preparation-de-vehicules')||isActive('/pages/preparation-de-vehicules-neufs')||isActive('/pages/preparation-de-vehicules-d-occasion')}" dropdown><a class="dropdown-toggle" dropdown-toggle ng-href="#">Préparation de véhicules <b class="caret"></b></a> <ul class="dropdown-menu"> <li><a href="#/pages/preparation-de-vehicules">Préparation de tous véhicules</a></li> <li class="divider"></li> <li><a href="#/pages/preparation-de-vehicules-neufs">Préparation de véhicules neufs</a></li> <li><a href="#/pages/preparation-de-vehicules-d-occasion">Préparation de véhicules d'occasions</a></li> </ul> </li> <li class="dropdown parent" ng-class="{ active: isActive('/pages/fleet-management')||isActive('/pages/car-policy')||isActive('/pages/logistique-gestion-de-flotte')||isActive('/pages/expertise-fleet-managment')||isActive('/pages/prise-en-charge-des-reparations')||isActive('/pages/gestion-de-tous-types-de-flottes')}" dropdown><a class="dropdown-toggle" dropdown-toggle ng-href="#">Fleet management <b class="caret"></b></a> <ul class="dropdown-menu"> <li><a href="#/pages/fleet-management">Fleet Management</a></li> <li class="divider"></li> <li><a href="#/pages/car-policy">Car policy</a></li> <li><a href="#/pages/logistique-gestion-de-flotte">Logistique</a></li> <li><a href="#/pages/suivi-de-vehicules">Suivi de véhicules</a></li> <li><a href="#/pages/expertise-fleet-managment">Expertise officielle</a></li> <li><a href="#/pages/prise-en-charge-des-reparations">Prise en charge des réparations</a></li> <li><a href="#/pages/gestion-de-tous-types-de-flottes">Gestion de tous types de flottes</a></li> </ul> </li> <li ng-class="{ active: isActive('/contact')}"><a ng-href="#/contact">Contact</a> </li> </ul> <ul class="nav navbar-nav navbar-right" ng-hide="true" ng-controller="NavCtrl"> <li ng-class="{ active: isActive('/login') || isActive('/account')}"> <a ng-hide-auth="" href="#/login">Account</a> <a ng-show-auth="" href="#/account">Account</a> </li> </ul> </div> </nav> </div> </div> </div> </div>
+<div class="row">
+  <div class="col-sm-3 col-lg-2 text-center block-center">
+    <h1 class="main-title top"><span class="lettrine">S</span><sub>f</sub><span class="lettrine">P</span></h1>
+    <h2 class="main-title bottom"><span class="lettrine">C</span>oncept <span class="lettrine">C</span>ar</h2> </div>
+  <div class="col-sm-9 col-lg-10 text-center block-center">
+    <h3 class="headline ng-binding">Spécialistes de l'esthétique de votre véhicule!</h3>
+    <p class="subheadline ng-binding">CAMIONS-AUTOS-MOTOS-ANCÈTRES-VÉHICULES DE CHANTIER OU AGRICOLE-BATEAU-TOUT AUTRE VÉHICULE</p>
+    <div class="row">
+      <div class="col-xs-12">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <div class="row">
+              <div class="col-xs-6"> <span class="visible-xs">Toggle navigation</span> </div>
+              <div class="col-xs-6">
+                <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              </div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
+            <ul class="nav navbar-nav" ng-controller="NavCtrl">
+              <li ng-class="{ active: isActive('/')}"><a ng-href="#">Home</a> </li>
+              <li ng-class="{ active: isActive('/blog')}"><a ng-href="#/blog">Blog</a> </li>
+              <li ng-class="{ active: isActive('/shop')}"><a ng-hide="true" ng-href="#/shop">E-commerce</a> </li>
+              <li class="dropdown parent" ng-class="{ active: isActive('/pages/nettoyage') || isActive('/pages/decalaminage')}" dropdown>
+              	<a class="dropdown-toggle" dropdown-toggle ng-href="#">Nettoyage <b class="caret"></b></a>
+              	<ul class="dropdown-menu">
+              		<li><a ng-href="#/pages/nettoyage">Nettoyage</a> </li>
+              		<li><a ng-href="#/pages/decalaminage">Decalaminage</a> </li>
+              	</ul>
+              </li>
+              <li ng-class="{ active: isActive('/pages/service-a-la-clientele')}"><a ng-href="#/pages/service-a-la-clientele">Service à la clientèle</a> </li>
+              <li ng-class="{ active: isActive('/pages/logistique')}"><a ng-href="#/pages/logistique">Logistique</a> </li>
+              <li ng-class="{ active: isActive('/pages/sinistres')}"><a ng-href="#/pages/sinistres">Sinistres</a> </li>
+              <li class="dropdown parent" ng-class="{ active: isActive('/pages/preparation-de-vehicules')||isActive('/pages/preparation-de-vehicules-neufs')||isActive('/pages/preparation-de-vehicules-d-occasion')}"
+              dropdown><a class="dropdown-toggle" dropdown-toggle ng-href="#">Préparation de véhicules <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#/pages/preparation-de-vehicules">Préparation de tous véhicules</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#/pages/preparation-de-vehicules-neufs">Préparation de véhicules neufs</a></li>
+                  <li><a href="#/pages/preparation-de-vehicules-d-occasion">Préparation de véhicules d'occasions</a></li>
+                </ul>
+              </li>
+              <li class="dropdown parent" ng-class="{ active: isActive('/pages/fleet-management')||isActive('/pages/car-policy')||isActive('/pages/logistique-gestion-de-flotte')||isActive('/pages/expertise-fleet-managment')||isActive('/pages/prise-en-charge-des-reparations')||isActive('/pages/gestion-de-tous-types-de-flottes')}"
+              dropdown><a class="dropdown-toggle" dropdown-toggle ng-href="#">Fleet management <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#/pages/fleet-management">Fleet Management</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#/pages/car-policy">Car policy</a></li>
+                  <li><a href="#/pages/logistique-gestion-de-flotte">Logistique</a></li>
+                  <li><a href="#/pages/suivi-de-vehicules">Suivi de véhicules</a></li>
+                  <li><a href="#/pages/expertise-fleet-managment">Expertise officielle</a></li>
+                  <li><a href="#/pages/prise-en-charge-des-reparations">Prise en charge des réparations</a></li>
+                  <li><a href="#/pages/gestion-de-tous-types-de-flottes">Gestion de tous types de flottes</a></li>
+                </ul>
+              </li>
+              <li ng-class="{ active: isActive('/contact')}"><a ng-href="#/contact">Contact</a> </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" ng-hide="true" ng-controller="NavCtrl">
+              <li ng-class="{ active: isActive('/login') || isActive('/account')}"> <a ng-hide-auth="" href="#/login">Account</a> <a ng-show-auth="" href="#/account">Account</a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
